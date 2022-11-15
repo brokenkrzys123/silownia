@@ -1,0 +1,106 @@
+@use "./variables" as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	text-decoration: none;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
+html.sr .load-hidden {
+	visibility: hidden;
+}
+body {
+	font-family: "Red Hat Display", sans-serif;
+	background-color: $black;
+}
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+button,
+a,
+input {
+	font-family: "Red Hat Display", sans-serif;
+}
+ul {
+	list-style: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	display: none;
+}
+.primary-btn {
+	padding: 1.5rem 3rem;
+	border: none;
+	background-color: $white;
+	color: $black;
+	font-weight: 700;
+	font-size: var(--btn-size);
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: $primaryColor;
+	}
+}
+.secondary-btn {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.5rem 3rem;
+	border: none;
+	background-color: $primaryColor;
+	color: $black;
+	font-weight: 900;
+	font-size: var(--btn-size);
+	transition: background-color 0.3s;
+	.icon {
+		font-size: 20px;
+		transition: transform 0.3s;
+	}
+	&:hover {
+		.icon {
+			transform: translateX(5px);
+		}
+	}
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 1300px;
+	overflow: hidden;
+}
+.section-subTitle {
+	font-family: "Kaushan Script", cursive;
+	color: $primaryColor;
+	font-size: var(--section-subTitle);
+	font-weight: 400;
+	transform: rotate(-3deg);
+	text-align: center;
+}
+.section-title {
+	margin-top: 1.75rem;
+	color: $white;
+	font-size: var(--section-title);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	.special-text {
+		margin-right: 0.5rem;
+		-webkit-text-stroke: 1px $gray-color;
+		color: transparent;
+	}
+}

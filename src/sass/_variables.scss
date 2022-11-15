@@ -1,0 +1,42 @@
+$primaryColor: #aadf39;
+$black: #121717;
+$white: #fff;
+$textColor: #c7c7c7;
+$first-color: #aadf39;
+$second-color: #a0d037;
+$third-color: #94c035;
+$gray-color: rgb(132, 132, 132);
+$waring: rgb(239, 0, 0);
+:root {
+	--header-subTitle: 3rem;
+	--header-title: 3.5rem;
+	--normal-text: 1.65rem;
+	--small-text: 1.4rem;
+	--button-text: 1.6rem;
+	--logo-size: 1.6rem;
+	--menu-size: 2rem;
+	--btn-size: 1.6rem;
+	--section-subTitle: 2.8rem;
+	--section-title: 2.8rem;
+	--subSection-title: 1.8rem;
+	--statTitle: 2.7rem;
+	--price-size: 2.3rem;
+	--footer-link: 1.5rem;
+}
+@media screen and (min-width: 576px) {
+	:root {
+		--header-subTitle: 3.5rem;
+		--header-title: 4rem;
+		--btn-size: 1.7em;
+	}
+}
+@media screen and (min-width: 992px) {
+	:root {
+		--header-subTitle: 7rem;
+		--header-title: 8rem;
+		--btn-size: 1.7em;
+		--section-subTitle: 3.5em;
+		--section-title: 4.5rem;
+		--statTitle: 3.2rem;
+	}
+}
